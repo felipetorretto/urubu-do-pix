@@ -1,0 +1,27 @@
+version: '3'
+services:
+  app:
+    build:
+      args:
+        user: urubu
+        uid: 1000
+      context: .
+      dockerfile: Dockerfile
+    image: urubu-do-pix
+    container_name: urubu-do-pix
+    working_dir: /var/www
+    volumes:
+      - .:/var/www
+  db:
+    image: mysql
+    container_name: db
+    command: --default-authentication-plugin=mysql_native_password
+    cap_add:
+      - SYS_NICE
+    environment:
+      MYSQL_DATABASE: urubu
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - ./.db:/var/lib/mysql
+    ports:
+      - '${DB_PORT:-3306}:3306'
