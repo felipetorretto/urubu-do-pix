@@ -5,10 +5,9 @@
 Um projeto para devs experimentarem boas práticas de programação.
 
 A ideia deste projeto é programar uma regra de negócio simples, mas aplicando conceitos avançados como SOLID, Design
-Patterns,
-DDD e testes automatizados.
+Patterns, DDD e testes automatizados.
 
-Essa é uma boa maneira de aprender de forma prática conceitos que úteis em projetos reais e legados.
+Essa é uma boa maneira de aprender de forma prática conceitos úteis para aplicar em projetos reais e legados.
 
 <p align="center">
 <img alt="mascote" src="assets/mascote.png">
