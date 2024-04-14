@@ -1,0 +1,9 @@
+/.db
+/coverage
+/node_modules
+/vendor
+.env
+
+# IDE
+/.idea
+/.vscode
