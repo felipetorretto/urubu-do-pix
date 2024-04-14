@@ -1,0 +1,32 @@
+{
+  "name": "felipetorretto/urubu-do-pix",
+  "authors": [
+    {
+      "name": "Felipe Torretto",
+      "email": "felipetorretto@gmail.com"
+    }
+  ],
+  "require": {
+    "ext-pdo": "*",
+    "catfan/medoo": "v1.7.9",
+    "illuminate/database": "^5.8",
+    "robmorgan/phinx": "0.11.7"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.5",
+    "mockery/mockery": "^1.3"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "FelipeTorretto\\UrubuDoPix\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "FelipeTorretto\\UrubuDoPix\\": "tests/"
+    }
+  }
+}
